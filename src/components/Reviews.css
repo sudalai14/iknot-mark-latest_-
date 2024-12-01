@@ -1,0 +1,79 @@
+.reviews-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .review-card {
+    flex: 1 1 calc(33.333% - 20px);
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+  }
+  
+  .review-card:hover {
+    transform: scale(1.02);
+  }
+  
+  .review-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .profile-pic {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .review-header h3 {
+    margin: 0;
+  }
+  
+  .rating {
+    display: flex;
+    gap: 5px;
+  }
+  
+  .feedback {
+    margin: 15px 0;
+    font-size: 16px;
+  }
+  
+  .like-button {
+    background-color: #25d366;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+  }
+  
+  .like-button:hover {
+    background-color: #1da851;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .review-card {
+      flex: 1 1 calc(50% - 20px);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .review-card {
+      flex: 1 1 100%;
+    }
+  }
+  

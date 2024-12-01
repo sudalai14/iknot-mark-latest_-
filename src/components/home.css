@@ -1,0 +1,14 @@
+/* CSS for dimming other nav items */
+.hover-parent .hover-item {
+    opacity: 1;
+    transition: opacity 0.3s ease;
+  }
+  
+  .hover-parent:hover .hover-item {
+    opacity: 0.5; /* Dim all nav items */
+  }
+  
+  .hover-parent .hover-item:hover {
+    opacity: 1; /* Keep the hovered item fully visible */
+  }
+  
